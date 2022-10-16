@@ -3,9 +3,6 @@ import { Client } from "@notionhq/client";
 
 export default async function api(req: NextApiRequest, res: NextApiResponse) {
   const notionClient = new Client({ auth: process.env.NOTION_SECRET_KEY });
-  if (req.method !== "POST")
-    return res.status(405).json({ message: "Method Not Allowed" });
-
   if (!process.env.NOTION_DB_KEY)
     return res
       .status(500)

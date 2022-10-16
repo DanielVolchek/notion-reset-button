@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   const pressedResetButton = async () => {
-    await fetch("/api/update", { method: "POST" });
+    await fetch("/api/update");
     console.log("done resetting");
   };
 
