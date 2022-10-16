@@ -6,7 +6,10 @@ export default async function api(req: NextApiRequest, res: NextApiResponse) {
   if (!process.env.NOTION_DB_KEY)
     return res
       .status(500)
-      .json({ message: "Uh... Something Went Wrong On My end" });
+      .json({
+        message: "Uh... Something Went Wrong On My end",
+        result: process.env.NOTION_DB_KEY,
+      });
 
   const initialData = await notionClient.databases.query({
     database_id: process.env.NOTION_DB_KEY,
