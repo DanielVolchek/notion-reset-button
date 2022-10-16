@@ -15,7 +15,7 @@ export default async function api(req: NextApiRequest, res: NextApiResponse) {
     database_id: process.env.NOTION_DB_KEY,
   });
 
-  for (let notionResult of initialData.results) {
+  for (const notionResult of initialData.results) {
     notionClient.pages.update({
       page_id: notionResult.id,
       properties: {
