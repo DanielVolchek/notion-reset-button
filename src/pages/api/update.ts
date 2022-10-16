@@ -20,6 +20,7 @@ export default async function api(req: NextApiRequest, res: NextApiResponse) {
       page_id: notionResult.id,
       properties: {
         Done: {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           checkbox: false,
         },
