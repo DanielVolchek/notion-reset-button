@@ -16,10 +16,10 @@ const Home: NextPage = () => {
     <main className="flex h-screen w-full items-center justify-center bg-[#212529] ">
       <button
         onClick={pressedResetButton}
-        className="border-none bg-blue-500 py-6
+        className="border-none bg-blue-600 py-6
         px-8
         text-2xl
-        text-white shadow-md transition-all duration-[250ms] hover:scale-105 hover:bg-blue-600 active:bg-emerald-300 "
+        text-white shadow-md transition-all duration-[250ms] hover:scale-105 hover:bg-blue-700 active:bg-emerald-300 "
       >
         Press To Reset
       </button>
