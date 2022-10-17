@@ -2,14 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 const Home: NextPage = () => {
-  // const pressedResetButton = async () => {
-  //   fetch("/api/update")
-  //     .then(() => console.log("sucessfully reset data"))
-  //     .catch((err) => console.log("failed to fetch data, err: ", err));
-  // };
-
-  const pressedResetButton = () => {
-    console.log("reset button pressed");
+  const pressedResetButton = async () => {
+    fetch("/api/update")
+      .then(() => console.log("sucessfully reset data"))
+      .catch((err) => console.log("failed to fetch data, err: ", err));
   };
 
   return (
