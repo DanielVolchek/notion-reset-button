@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         className="border-none bg-blue-600 py-6
         px-8
         text-2xl
-        text-white shadow-md transition-all duration-[250ms] hover:scale-105 hover:bg-blue-700 active:bg-emerald-300 "
+        text-white shadow-md transition-all duration-[250ms] hover:scale-105 hover:bg-blue-500 active:bg-emerald-300 "
       >
         Press To Reset
       </button>
